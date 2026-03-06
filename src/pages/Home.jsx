@@ -1,8 +1,9 @@
-
+import Sidebar from "../components/Sidebar"
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <div className="min-h-screen"><Sidebar />
+</div>
   )
 }
 

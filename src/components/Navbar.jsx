@@ -1,9 +1,10 @@
+
 import { Link } from "react-router-dom"
 import logo from "../images/logo.png"
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between items-center bg-blue-900 text-white font-bold px-10 py-2">
+    <div className="flex justify-between items-center bg-blue-900 text-white font-bold px-10 py-4 fixed top-0 left-0 w-full z-50 shadow-md">
       <div >
         <img src={logo} alt="logo" className="w-30 h-15" /></div>
 
@@ -12,7 +13,7 @@ const Navbar = () => {
       <div className="flex gap-5 text-xl  ">
         <Link to="/" className="  cursor-pointer hover:text-orange-400 hover:underline">Home</Link>
         <Link to="/about" className=" cursor-pointer  hover:text-orange-400 hover:underline" >About</Link>
-        <Link to="/createPost" className="  cursor-pointer hover:text-orange-400  hover:underline">CreatePost</Link>
+        <Link to="/createPost" className=" cursor-pointer hover:text-orange-400  hover:underline">CreatePost</Link>
 
       </div>
 

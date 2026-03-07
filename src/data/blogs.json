@@ -1,0 +1,33 @@
+
+{
+  "blogs": [
+
+{
+    "id": 1,
+    "title": "Getting Started with React",
+    "description": "Learn the basics of React and build modern UI.",
+    "author": "John Doe",
+    "category": "React",
+    "image": "https://picsum.photos/400/300?1",
+    "readingTime": 5
+  },
+  {
+    "id": 2,
+    "title": "Future of AI",
+    "description": "Artificial Intelligence is transforming industries.",
+    "author": "Sarah Lee",
+    "category": "AI",
+    "image": "https://picsum.photos/400/300?2",
+    "readingTime": 6
+  },
+  {
+    "id": 3,
+    "title": "Modern Web Development",
+    "description": "Explore new tools and frameworks.",
+    "author": "Alex Brown",
+    "category": "Web Development",
+    "image": "https://picsum.photos/400/300?3",
+    "readingTime": 4
+  }
+]
+}

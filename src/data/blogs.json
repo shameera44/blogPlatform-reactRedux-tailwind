@@ -1,33 +1,35 @@
-
 {
   "blogs": [
+    {
+      "id": 1,
+      "title": "Getting Started with React",
+      "description": "Learn the basics of React and build modern UI.",
+      "author": "John Doe",
+      "category": "React",
+      "image": "https://media.licdn.com/dms/image/v2/D5612AQEFt76fCEkvpg/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1706580043556?e=2147483647&v=beta&t=0zfnzBCduTFe8sUdAdmuzJvnIJmTxeQbGEsKk-FQuz0",
+      "readingTime": 5,
+      "content": "React is an open-source JavaScript library for building user interfaces (UI), primarily for single-page applications where parts of the page need to update dynamically without a full reload. It is maintained by Meta (formerly Facebook) and a large community of developers."
+    },
+    {
+      "id": 2,
+      "title": "Future of AI",
+      "description": "Artificial Intelligence is transforming industries.",
+      "author": "Sarah Lee",
+      "category": "AI",
+      "image": "https://media.istockphoto.com/id/1452604857/photo/businessman-touching-the-brain-working-of-artificial-intelligence-automation-predictive.jpg?s=612x612&w=0&k=20&c=GkAOxzduJbUKpS2-LX_l6jSKtyhdKlnPMo2ito4xpR4=",
+      "readingTime": 6,
+      "content" :"Artificial Intelligence (AI) is technology that enables computers to simulate human intelligence, such as learning, reasoning, problem-solving, and creativity. It powers applications that analyze vast data to identify patterns, make decisions, and generate content, including generative AI (text/images) and agents that act autonomously"
 
-{
-    "id": 1,
-    "title": "Getting Started with React",
-    "description": "Learn the basics of React and build modern UI.",
-    "author": "John Doe",
-    "category": "React",
-    "image": "https://picsum.photos/400/300?1",
-    "readingTime": 5
-  },
-  {
-    "id": 2,
-    "title": "Future of AI",
-    "description": "Artificial Intelligence is transforming industries.",
-    "author": "Sarah Lee",
-    "category": "AI",
-    "image": "https://picsum.photos/400/300?2",
-    "readingTime": 6
-  },
-  {
-    "id": 3,
-    "title": "Modern Web Development",
-    "description": "Explore new tools and frameworks.",
-    "author": "Alex Brown",
-    "category": "Web Development",
-    "image": "https://picsum.photos/400/300?3",
-    "readingTime": 4
-  }
-]
+    },
+    {
+      "id": 3,
+      "title": "Modern Web Development",
+      "description": "Explore new tools and frameworks.",
+      "author": "Alex Brown",
+      "category": "Web Development",
+      "image": "https://miro.medium.com/1*V-Jp13LvtVc2IiY2fp4qYw.jpeg",
+      "readingTime": 4,
+      "content" :"Web development is the process of creating, building, and maintaining websites and web applications that run online, ranging from simple text pages to complex, interactive platforms. It involves a mix of front-end (user-facing), back-end (server-side), and database management to ensure functionality, performance, and security."
+    }
+  ]
 }

@@ -49,7 +49,7 @@ const EditPost = () => {
   return (
     <div className="max-w-xl mx-auto p-6 mt-20 shadow-2xl">
       <h1 className="text-2xl font-bold mb-4">Edit Blog</h1>
-      <form className="space-y-4" onSubmit={handleSubmit}>
+      <form className="space-y-4  border-2 border-gray-200 p-5 rounded-xl shadow-xl" onSubmit={handleSubmit}>
         <input type="text" placeholder="Title" className="w-full border p-2" value={title} onChange={e => setTitle(e.target.value)} required />
         <input type="text" placeholder="Description" className="w-full border p-2" value={description} onChange={e => setDescription(e.target.value)} required />
         <input type="text" placeholder="Author" className="w-full border p-2" value={author} onChange={e => setAuthor(e.target.value)} required />

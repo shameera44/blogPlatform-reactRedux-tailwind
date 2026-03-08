@@ -39,7 +39,8 @@ const CreatePost = () => {
   return (
     <div className="max-w-xl mx-auto p-6 mt-20">
       <h1 className="text-2xl font-bold mb-4 text-center">Create New Blog</h1>
-      <form className="space-y-4" onSubmit={handleSubmit}>
+
+      <form className="space-y-4 border-2 border-gray-200 p-5 rounded-xl shadow-xl" onSubmit={handleSubmit}>
         <input
           type="text"
           placeholder="Title"

@@ -1,8 +1,9 @@
 
-const Sidebar = () => {
+const Sidebar = ({ setSelectedCategory }) => {
 
   const categories = [
-    { name: "Web Development", tag: "webdev" },
+     { name: "All", tag: "all" },
+    { name: "Web Development", tag: "webdevelopment" },
     { name: "React", tag: "react" },
     { name: "JavaScript", tag: "javascript" },
     { name: "Python", tag: "python" },
@@ -19,7 +20,7 @@ const Sidebar = () => {
         {categories.map((category) => (
           <li
             key={category.tag}
-             onClick={() => console.log(category.tag)}
+             onClick={() => setSelectedCategory(category.tag)}
             className="cursor-pointer hover:text-orange-600 font-medium"
           >
             {category.name}

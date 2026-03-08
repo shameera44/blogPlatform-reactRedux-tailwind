@@ -26,7 +26,7 @@ const CreatePost = () => {
       author,
       category,
       readingTime,
-      image: image || `https://picsum.photos/400/300?${Date.now()}`, // placeholder if empty
+      image: image || `https://picsum.photos/400/300?${Date.now()}`, 
     };
 
     // Dispatch addBlog action

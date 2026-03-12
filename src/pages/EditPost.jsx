@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { updateBlog } from "../features/blogSlice";
+import { updateBlog } from "../features/blog/blogSlice";
 import { useNavigate, useParams } from "react-router-dom";
 
 const EditPost = () => {

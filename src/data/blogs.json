@@ -30,6 +30,16 @@
       "image": "https://miro.medium.com/1*V-Jp13LvtVc2IiY2fp4qYw.jpeg",
       "readingTime": 4,
       "content" :"Web development is the process of creating, building, and maintaining websites and web applications that run online, ranging from simple text pages to complex, interactive platforms. It involves a mix of front-end (user-facing), back-end (server-side), and database management to ensure functionality, performance, and security."
+    },
+     {
+      "id": 4,
+      "title": "Focuses on JavaScript",
+      "description": "Walsh provides in-depth, practical examples of modern JavaScript.",
+      "author": "David Walsh",
+      "category": "java script",
+      "image": "https://miro.medium.com/0*VzV25X2xJ3HEiuCK.",
+      "readingTime": 5,
+      "content" :"David Walsh (davidwalsh.name) is a highly respected web developer, software engineer, and technical author based in Madison, Wisconsin. His blog, davidwalsh.name, is a long-standing, popular resource known for practical tutorials on JavaScript, CSS, and modern web technologies.Walsh provides in-depth, practical examples of modern JavaScript, including asynchronous programming, Fetch API, Promise API, and various JavaScript libraries and frameworks."
     }
   ]
 }

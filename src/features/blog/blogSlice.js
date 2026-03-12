@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
-import initialBlogs from "../data/blogs.json"
+import initialBlogs from "../../data/blogs.json"
 
-// Load from LocalStorage if exists, else use JSON
+
 const savedBlogs = localStorage.getItem("blogs");
 
 const initialState = {
@@ -14,6 +14,7 @@ export const blogSlice = createSlice({
   name: "post",
   initialState,
   reducers: {
+
     addBlog: (state, action) => {
       state.posts.push(action.payload);
       localStorage.setItem("blogs", JSON.stringify(state.posts));

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { addBlog } from "../features/blogSlice.js"; // ✅ Correct import
+import { addBlog } from "../features/blog/blogSlice.js"; // ✅ Correct import
 import { useNavigate } from "react-router-dom";
 
 const CreatePost = () => {

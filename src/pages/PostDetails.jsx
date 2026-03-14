@@ -41,7 +41,7 @@ const PostDetails = () => {
       <p className="mt-5 text-lg text-gray-700">
         {blog.content}
       </p>
-<Comment/>
+      <Comment />
     </div>
   )
 }

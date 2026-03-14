@@ -31,16 +31,19 @@ const BlogCard = ({ id, title, description, author, category, image, readingTime
             <span>{readingTime} min read</span>
           </div>
  <div className="flex gap-2 mt-3">
-        <button
-          onClick={onEdit}
-          className="bg-yellow-500 text-white px-3 py-1 rounded"
-        >
-          Edit
-        </button>
 
         <button
-          onClick={onDelete}
-          className="bg-red-600 text-white px-3 py-1 rounded"
+          onClick={ (e)=>{ 
+            e.preventDefault()
+            onEdit()}}
+          className="bg-yellow-500 text-white px-3 py-1 rounded cursor-pointer"> Edit</button>
+
+        <button
+          onClick={ (e)=>{ 
+            e.preventDefault()
+            onDelete()
+          } }
+          className="bg-red-600 text-white px-3 py-1 rounded cursor-pointer "
         >
           Delete
         </button>

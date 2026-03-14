@@ -4,14 +4,14 @@ import { useSelector, useDispatch } from "react-redux"
 import { deleteBlog } from "../features/blog/blogSlice"
 import { useNavigate } from "react-router-dom"
 import { useState } from "react"
-
+import toast from "react-hot-toast"
 const Home = ({ searchTerm }) => {
 
   const blogs = useSelector(state => state.blog.posts)
   const dispatch = useDispatch()
   const navigate = useNavigate()
   const [selectedCategory, setSelectedCategory] = useState("all")
-
+  const user = useSelector(state => state.auth.loggedinUser)
 
   // category filter
   const categoryFiltered =
@@ -29,7 +29,7 @@ const Home = ({ searchTerm }) => {
   )
 
   return (
-    <div className="min-h-screen flex p-5">
+    <div className="min-h-screen flex flex-col lg:flex-row p-5">
 
       {/* sidebar added on the left */}
 
@@ -59,7 +59,7 @@ const Home = ({ searchTerm }) => {
 
         {/* blog card grid */}
 
-        <h1 className="text-4xl font-bold mb-2 mt-2 bg-blue-700 text-center text-white">Latest Blogs </h1>
+        <h1 className="text-4xl font-bold mb-2 mt-2 bg-gray-600 text-center text-white">Latest Blogs </h1>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
 
 
@@ -70,7 +70,7 @@ const Home = ({ searchTerm }) => {
                   onEdit={() => navigate(`/edit/${blog.id}`)}
                   onDelete={() => {
                     if (!user) {
-                      alert("Please login to delete blog")
+                      toast("Please login to delete blog")
                       navigate("/login")
                       return
                     }

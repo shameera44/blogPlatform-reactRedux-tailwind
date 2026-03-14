@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { addBlog } from "../features/blog/blogSlice.js"; // ✅ Correct import
+import { addBlog } from "../features/blog/blogSlice.js";
 import { useNavigate } from "react-router-dom";
 
 const CreatePost = () => {
@@ -18,21 +18,21 @@ const CreatePost = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Create new blog object
+    
     const newBlog = {
-      id: Date.now(), // simple unique ID
+      id: Date.now(),
       title,
       description,
       author,
       category,
       readingTime,
-      image: image || `https://picsum.photos/400/300?${Date.now()}`, 
+      image,
     };
 
-    // Dispatch addBlog action
+    
     dispatch(addBlog(newBlog));
 
-    // Navigate back to home
+
     navigate("/");
   };
 

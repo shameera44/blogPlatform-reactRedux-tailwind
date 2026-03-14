@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { updateBlog } from "../features/blog/blogSlice";
 import { useNavigate, useParams } from "react-router-dom";
+import toast from "react-hot-toast";
 
 const EditPost = () => {
   const { id } = useParams();
@@ -41,6 +42,7 @@ const EditPost = () => {
       image,
     };
     dispatch(updateBlog(updatedBlog));
+    toast.success("your blog is updated")
     navigate("/");
   };
 

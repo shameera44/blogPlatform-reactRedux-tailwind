@@ -1,6 +1,6 @@
 
 import { createSlice } from "@reduxjs/toolkit";
-
+import toast from "react-hot-toast";
 const storedUsers = JSON.parse(localStorage.getItem('users'))
 const currentUser = JSON.parse(localStorage.getItem('currentUser'))
 
@@ -27,7 +27,7 @@ export const authSlice = createSlice({
             }
 
             else {
-                alert("user already exist")
+                toast("user already exist")
             }
         },
 
@@ -43,7 +43,7 @@ export const authSlice = createSlice({
                 state.loggedinUser = user
                 localStorage.setItem("currentUser", JSON.stringify(user))
             } else {
-                alert("Invalid credentials")
+                toast.error("Invalid credentials")
             }
         },
         logout: (state) => {

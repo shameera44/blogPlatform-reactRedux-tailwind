@@ -1,3 +1,4 @@
+
 import Sidebar from "../components/Sidebar"
 import BlogCard from "../components/BlogCard"
 import { useSelector, useDispatch } from "react-redux"
@@ -139,8 +140,8 @@ const Home = ({ searchTerm }) => {
               key={index}
               onClick={() => setCurrentPage(index + 1)}
               className={`px-3 py-1 rounded ${currentPage === index + 1
-                  ? "bg-blue-600 text-white"
-                  : "bg-gray-300"
+                ? "bg-blue-600 text-white"
+                : "bg-gray-300"
                 }`}
             >
               {index + 1}

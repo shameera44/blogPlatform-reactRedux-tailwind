@@ -36,7 +36,7 @@ const CreatePost = () => {
         }
       });
 
-      // ✅ ONLY ONE listener
+      //  quill using
       quillRef.current.on("text-change", () => {
         const html = quillRef.current.root.innerHTML;
         setContent(html);
@@ -50,8 +50,8 @@ const CreatePost = () => {
     const newBlog = {
       id: Date.now(),
       title,
-      description, // short
-      content,     // full HTML
+      description,
+      content,
       author,
       category,
       readingTime,
@@ -83,7 +83,7 @@ const CreatePost = () => {
           required
         />
 
-        {/*  Description (separate) */}
+        {/*  Description */}
         <textarea
           placeholder="Short Description (for blog card)"
           className="w-full border p-2 rounded"
@@ -92,7 +92,7 @@ const CreatePost = () => {
           maxLength={150}
         />
 
-        {/*  Content Editor */}
+        {/*  Content  */}
         <label className="font-semibold ">Blog Content</label>
         <div
           ref={editorRef}

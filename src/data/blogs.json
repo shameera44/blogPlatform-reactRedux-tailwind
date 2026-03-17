@@ -7,8 +7,7 @@
       "author": "John Doe",
       "category": "React",
       "image": "https://media.licdn.com/dms/image/v2/D5612AQEFt76fCEkvpg/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1706580043556?e=2147483647&v=beta&t=0zfnzBCduTFe8sUdAdmuzJvnIJmTxeQbGEsKk-FQuz0",
-      "readingTime": 5,
-      "content": "React is an open-source JavaScript library for building user interfaces (UI), primarily for single-page applications where parts of the page need to update dynamically without a full reload. It is maintained by Meta (formerly Facebook) and a large community of developers."
+      "content": "React is an open-source JavaScript library for building user interfaces (UI), primarily for single-page applications where parts of the page need to update dynamically without a full reload. It is maintained by Meta (formerly Facebook) and a large community of developers.React is an open-source JavaScript library for building user interfaces (UI), primarily for single-page applications where parts of the page need to update dynamically without a full reload. It is maintained by Meta (formerly Facebook) and a large community of developers.React is an open-source JavaScript library for building user interfaces (UI), primarily for single-page applications where parts of the page need to update dynamically without a full reload. It is maintained by Meta (formerly Facebook) and a large community of developers.React is an open-source JavaScript library for building user interfaces (UI), primarily for single-page applications where parts of the page need to update dynamically without a full reload. It is maintained by Meta (formerly Facebook) and a large community of developers.React is an open-source JavaScript library for building user interfaces (UI), primarily for single-page applications where parts of the page need to update dynamically without a full reload. It is maintained by Meta (formerly Facebook) and a large community of developers.React is an open-source JavaScript library for building user interfaces (UI), primarily for single-page applications where parts of the page need to update dynamically without a full reload. It is maintained by Meta (formerly Facebook) and a large community of developers.React is an open-source JavaScript library for building user interfaces (UI), primarily for single-page applications where parts of the page need to update dynamically without a full reload. It is maintained by Meta (formerly Facebook) and a large community of developers.React is an open-source JavaScript library for building user interfaces (UI), primarily for single-page applications where parts of the page need to update dynamically without a full reload. It is maintained by Meta (formerly Facebook) and a large community of developers.React is an open-source JavaScript library for building user interfaces (UI), primarily for single-page applications where parts of the page need to update dynamically without a full reload. It is maintained by Meta (formerly Facebook) and a large community of developers.React is an open-source JavaScript library for building user interfaces (UI), primarily for single-page applications where parts of the page need to update dynamically without a full reload. It is maintained by Meta (formerly Facebook) and a large community of developers.React is an open-source JavaScript library for building user interfaces (UI), primarily for single-page applications where parts of the page need to update dynamically without a full reload. It is maintained by Meta (formerly Facebook) and a large community of developers.React is an open-source JavaScript library for building user interfaces (UI), primarily for single-page applications where parts of the page need to update dynamically without a full reload. It is maintained by Meta (formerly Facebook) and a large community of developers.React is an open-source JavaScript library for building user interfaces (UI), primarily for single-page applications where parts of the page need to update dynamically without a full reload. It is maintained by Meta (formerly Facebook) and a large community of developers.React is an open-source JavaScript library for building user interfaces (UI), primarily for single-page applications where parts of the page need to update dynamically without a full reload. It is maintained by Meta (formerly Facebook) and a large community of developers.React is an open-source JavaScript library for building user interfaces (UI), primarily for single-page applications where parts of the page need to update dynamically without a full reload. It is maintained by Meta (formerly Facebook) and a large community of developers.React is an open-source JavaScript library for building user interfaces (UI), primarily for single-page applications where parts of the page need to update dynamically without a full reload. It is maintained by Meta (formerly Facebook) and a large community of developers."
     },
     {
       "id": 2,
@@ -17,9 +16,7 @@
       "author": "Sarah Lee",
       "category": "AI",
       "image": "https://media.istockphoto.com/id/1452604857/photo/businessman-touching-the-brain-working-of-artificial-intelligence-automation-predictive.jpg?s=612x612&w=0&k=20&c=GkAOxzduJbUKpS2-LX_l6jSKtyhdKlnPMo2ito4xpR4=",
-      "readingTime": 6,
-      "content" :"Artificial Intelligence (AI) is technology that enables computers to simulate human intelligence, such as learning, reasoning, problem-solving, and creativity. It powers applications that analyze vast data to identify patterns, make decisions, and generate content, including generative AI (text/images) and agents that act autonomously"
-
+      "content": "Artificial Intelligence (AI) is technology that enables computers to simulate human intelligence, such as learning, reasoning, problem-solving, and creativity. It powers applications that analyze vast data to identify patterns, make decisions, and generate content, including generative AI (text/images) and agents that act autonomously"
     },
     {
       "id": 3,
@@ -28,91 +25,79 @@
       "author": "Alex Brown",
       "category": "Web Development",
       "image": "https://miro.medium.com/1*V-Jp13LvtVc2IiY2fp4qYw.jpeg",
-      "readingTime": 4,
-      "content" :"Web development is the process of creating, building, and maintaining websites and web applications that run online, ranging from simple text pages to complex, interactive platforms. It involves a mix of front-end (user-facing), back-end (server-side), and database management to ensure functionality, performance, and security."
+      "content": "Web development is the process of creating, building, and maintaining websites and web applications that run online, ranging from simple text pages to complex, interactive platforms. It involves a mix of front-end (user-facing), back-end (server-side), and database management to ensure functionality, performance, and security."
     },
-     {
+    {
       "id": 4,
-      "title": "Focuses on JavaScript",
-      "description": "Walsh provides in-depth, practical examples of modern JavaScript.",
+      "title": "python compiler",
+      "description": "A Python compiler is a component within the Python interpreter that translates human-readable Python source code into an intermediate",
       "author": "David Walsh",
-      "category": "java script",
-      "image": "https://miro.medium.com/0*VzV25X2xJ3HEiuCK.",
-      "readingTime": 5,
-      "content" :"David Walsh (davidwalsh.name) is a highly respected web developer, software engineer, and technical author based in Madison, Wisconsin. His blog, davidwalsh.name, is a long-standing, popular resource known for practical tutorials on JavaScript, CSS, and modern web technologies.Walsh provides in-depth, practical examples of modern JavaScript, including asynchronous programming, Fetch API, Promise API, and various JavaScript libraries and frameworks."
+      "category": "python",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSj3rKgxnOoKY_PwGWN3Iad2mqyZceT5GPPA&s",
+      "content": "A Python compiler is a component within the Python interpreter that translates human-readable Python source code into an intermediate, low-level format called bytecode. This bytecode, not machine code, is then executed by the Python Virtual Machine (PVM).Bytecode Generation (Compilation): The AST is then translated into Python bytecode. This bytecode is a set of platform-independent instructions that are more efficient to execute than the original source code.Execution (Interpretation): The bytecode is then fed to the Python Virtual Machine (PVM), which acts as an interpreter. The PVM reads and executes the bytecode instructions one by one, translating them into machine code that the computer's CPU can understand and run. "
     },
-     {
+    {
       "id": 5,
       "title": "React Compiler v1.0",
       "description": "React Compiler works on both React and React Native,",
       "author": "Lauren Tan",
       "category": "React",
       "image": "https://www.shutterstock.com/image-illustration/react-acronym-reactjslibrary-building-user-260nw-2401856751.jpg",
-      "readingTime": 4,
       "content": "We are releasing the compiler’s first stable release today. React Compiler works on both React and React Native, and automatically optimizes components and hooks without requiring rewrites. The compiler has been battle tested on major apps at Meta and is fully production-ready.React Compiler is a build-time tool that optimizes your React app through automatic memoization. Last year, we published React Compiler’s first beta and received lots of great feedback and contributions. We’re excited about the wins we’ve seen from folks adopting the compiler (see case studies from Sanity Studio and Wakelet) and are excited to bring the compiler to more users in the React community"
     },
     {
       "id": 6,
-      "title": "Future of AI",
-      "description": "Artificial Intelligence is transforming industries.",
+      "title": "Features of python",
+      "description": "easy-to-learn syntax and an extensive standard library",
       "author": "Sarah Lee",
-      "category": "AI",
-      "image": "https://media.istockphoto.com/id/1452604857/photo/businessman-touching-the-brain-working-of-artificial-intelligence-automation-predictive.jpg?s=612x612&w=0&k=20&c=GkAOxzduJbUKpS2-LX_l6jSKtyhdKlnPMo2ito4xpR4=",
-      "readingTime": 6,
-      "content" :"Artificial Intelligence (AI) is technology that enables computers to simulate human intelligence, such as learning, reasoning, problem-solving, and creativity. It powers applications that analyze vast data to identify patterns, make decisions, and generate content, including generative AI (text/images) and agents that act autonomously"
-
+      "category": "python",
+      "image": "https://cdn.educba.com/academy/wp-content/uploads/2019/10/Python-Features.png",
+      "content": "Python is a versatile, high-level, and interpreted programming language known for its simple, easy-to-learn syntax and an extensive standard library. Key features contributing to its popularity include ,Readability and Simplicity: Python's design emphasizes clean, English-like syntax that uses indentation to define code blocks, making it highly readable and beginner-friendly.Interpreted Language: Code is executed line by line at runtime, which facilitates rapid prototyping and easier debugging since errors are detected immediately.Object-Oriented Programming (OOP): It fully supports OOP concepts such as classes, objects, inheritance, and polymorphism, allowing for modular and reusable code design.Automatic Memory Management: Python has an automatic garbage collection system that handles memory management, freeing developers from manual memory allocation and deallocation.Integration Capabilities: Python can be easily integrated with code written in other languages like C, C++, and Java, which allows performance-critical components to be optimized"
     },
     {
       "id": 7,
-      "title": "Modern Web Development",
-      "description": "Explore new tools and frameworks.",
+      "title": " Web Development stock",
+      "description": " Closeup shots of code on screens, developers typing, and multiple monitor setups.",
       "author": "Alex Brown",
       "category": "Web Development",
-      "image": "https://miro.medium.com/1*V-Jp13LvtVc2IiY2fp4qYw.jpeg",
-      "readingTime": 4,
-      "content" :"Web development is the process of creating, building, and maintaining websites and web applications that run online, ranging from simple text pages to complex, interactive platforms. It involves a mix of front-end (user-facing), back-end (server-side), and database management to ensure functionality, performance, and security."
+      "image": "https://thumbs.dreamstime.com/b/website-development-tree-26891118.jpg",
+      "content": "High-quality web development stock photos, vectors, and videos are available on platforms like Pexels, Adobe Stock, iStock, and Getty Images. These assets feature themes such as coding, UI/UX design, programming on laptops, and team collaboration. Both free and paid options exist, covering diverse styles from realistic offices to isometric illustrations.Key Tags to Search: Web development, coding, web designer, programming, software development, UI/UX, responsive design, backend, frontend, developer office. "
     },
-     {
+    {
       "id": 8,
       "title": "Focuses on JavaScript",
       "description": "Walsh provides in-depth, practical examples of modern JavaScript.",
       "author": "David Walsh",
-      "category": "java script",
+      "category": "javascript",
       "image": "https://miro.medium.com/0*VzV25X2xJ3HEiuCK.",
-      "readingTime": 5,
-      "content" :"David Walsh (davidwalsh.name) is a highly respected web developer, software engineer, and technical author based in Madison, Wisconsin. His blog, davidwalsh.name, is a long-standing, popular resource known for practical tutorials on JavaScript, CSS, and modern web technologies.Walsh provides in-depth, practical examples of modern JavaScript, including asynchronous programming, Fetch API, Promise API, and various JavaScript libraries and frameworks."
+      "content": "David Walsh (davidwalsh.name) is a highly respected web developer, software engineer, and technical author based in Madison, Wisconsin. His blog, davidwalsh.name, is a long-standing, popular resource known for practical tutorials on JavaScript, CSS, and modern web technologies.Walsh provides in-depth, practical examples of modern JavaScript, including asynchronous programming, Fetch API, Promise API, and various JavaScript libraries and frameworks."
     },
     {
-      "id": 1,
-      "title": "Getting Started with React",
-      "description": "Learn the basics of React and build modern UI.",
-      "author": "John Doe",
-      "category": "React",
-      "image": "https://media.licdn.com/dms/image/v2/D5612AQEFt76fCEkvpg/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1706580043556?e=2147483647&v=beta&t=0zfnzBCduTFe8sUdAdmuzJvnIJmTxeQbGEsKk-FQuz0",
-      "readingTime": 5,
-      "content": "React is an open-source JavaScript library for building user interfaces (UI), primarily for single-page applications where parts of the page need to update dynamically without a full reload. It is maintained by Meta (formerly Facebook) and a large community of developers."
+      "id": 9,
+      "title": "Mastering ES6 Features in JavaScript",
+      "description": "Mastering ES6 Features  and key facts",
+      "author": "alex Doe",
+      "category": "javascript",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_eyD2LIgCAV0pdKcxQqXdZltsShK_-mZ6zg&s",
+      "content": "JavaScript is a high-level, interpreted programming language that enables interactive and dynamic behavior on web pages. Created in 1995 by Brendan Eich at Netscape Communications, it has evolved into one of the most widely used languages for both client-side and server-side development through environments like Node.js.Core features.JavaScript is prototype-based, meaning objects inherit directly from other objects rather than from classes. It supports first-class functions, closures, asynchronous programming via promises and async/await, and just-in-time (JIT) compilation for performance. The language’s loose typing and event-driven model make it highly adaptable for both scripting and application logic. "
     },
     {
-      "id": 2,
-      "title": "Future of AI",
-      "description": "Artificial Intelligence is transforming industries.",
+      "id": 10,
+      "title": "Learn  AI",
+      "description": "Difference Between AI, Machine Learning, and Deep Learning”",
       "author": "Sarah Lee",
       "category": "AI",
-      "image": "https://media.istockphoto.com/id/1452604857/photo/businessman-touching-the-brain-working-of-artificial-intelligence-automation-predictive.jpg?s=612x612&w=0&k=20&c=GkAOxzduJbUKpS2-LX_l6jSKtyhdKlnPMo2ito4xpR4=",
-      "readingTime": 6,
-      "content" :"Artificial Intelligence (AI) is technology that enables computers to simulate human intelligence, such as learning, reasoning, problem-solving, and creativity. It powers applications that analyze vast data to identify patterns, make decisions, and generate content, including generative AI (text/images) and agents that act autonomously"
-
+      "image": "https://i.ytimg.com/vi/WSbgixdC9g8/maxresdefault.jpg",
+      "content": "Artificial Intelligence (AI) is the broad concept of machines simulating human intelligence, Machine Learning (ML) is a subset of AI that learns from data to make predictions, and Deep Learning (DL) is a specialized subset of ML using multi-layered neural networks to analyze complex data. Think of them as nested, concentric circles, with DL inside ML, and ML inside AI.The overarching science aimed at creating smart systems capable of mimicking human behavior, covering everything from rule-based systems to advanced AI.Machine Learning (ML): A technique that teaches computers to learn from data to identify patterns and make predictions, rather than being explicitly programmed for every task. It often uses structured data.Deep Learning (DL): A subset of ML inspired by the human brain’s structure (neural networks). It excels at analyzing large amounts of unstructured data (like images or speech) and requires significant computing power (GPUs)."
     },
     {
-      "id": 3,
-      "title": "Modern Web Development",
-      "description": "Explore new tools and frameworks.",
+      "id": 11,
+      "title": "javascript function methods",
+      "description": "Promises vs Async/Await – Which is Better?",
       "author": "Alex Brown",
-      "category": "Web Development",
-      "image": "https://miro.medium.com/1*V-Jp13LvtVc2IiY2fp4qYw.jpeg",
-      "readingTime": 4,
-      "content" :"Web development is the process of creating, building, and maintaining websites and web applications that run online, ranging from simple text pages to complex, interactive platforms. It involves a mix of front-end (user-facing), back-end (server-side), and database management to ensure functionality, performance, and security."
+      "category": "java script",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZPECg4zmx3u5tfuJOxoyM7iTggDOI0i4UNQ&s",
+      "content": "Async/await is generally better for readability, debugging, and maintaining clean code, as it makes asynchronous code look synchronous, avoiding complex .then() nesting. Promises are better for parallel execution (e.g., Promise.all()) or simple, one-off async tasks. Both are valid, as async/await is built on promises.Conclusion: Use async/await for most daily tasks to improve readability, but use Promises directly for managing multiple parallel tasks efficiently, according to NamasteDev and Stack Overflow"
     }
-   
   ]
 }

@@ -18,7 +18,7 @@ export const authSlice = createSlice({
             const newUser = action.payload
             const existUser = state.users.find(
 
-                 user => user.email === newUser.email
+                user => user.email === newUser.email
             )
 
             if (!existUser) {
@@ -53,6 +53,6 @@ export const authSlice = createSlice({
 
     }
 })
-  
-export const {register,login,logout} = authSlice.actions;
+
+export const { register, login, logout } = authSlice.actions;
 export default authSlice.reducer;

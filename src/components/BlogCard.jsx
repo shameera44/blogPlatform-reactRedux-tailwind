@@ -1,25 +1,44 @@
-import { Link } from "react-router-dom"
 
-const BlogCard = ({ id, title, description, author, category, image, readingTime, onEdit, onDelete, searchTerm }) => {
+import { Link } from "react-router-dom"
+import { calculateReadingTime } from "../utils/readingTime";
+
+const BlogCard = ({
+  id,
+  title,
+  description,
+  author,
+  category,
+  image,
+  content,
+  onEdit,
+  onDelete,
+  searchTerm
+}) => {
+
+  // Reading time calculation
+  const readingTime = calculateReadingTime(content);
+
+  //  Highlight search text
 
   const highlightText = (text) => {
+    if (!searchTerm) return text;
 
-    if (!searchTerm) return text
-
-    const regex = new RegExp(`(${searchTerm})`, "gi")
+    const regex = new RegExp(`(${searchTerm})`, "gi");
 
     return text.split(regex).map((part, index) =>
       part.toLowerCase() === searchTerm.toLowerCase()
-        ? <span key={index} className="bg-yellow-300 px-1 rounded">{part}</span>
+        ? (
+          <span key={index} className="bg-yellow-300 px-1 rounded">
+            {part}
+          </span>
+        )
         : part
-    )
-  }
-
+    );
+  };
 
   return (
-
     <Link to={`/postdetails/${id}`}>
-      <div className="bg-white rounded-lg shadow-md ">
+      <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition">
 
         <img
           src={image}
@@ -41,35 +60,40 @@ const BlogCard = ({ id, title, description, author, category, image, readingTime
             {highlightText(description)}
           </p>
 
+          {/* Author , Reading Time  */}
           <div className="flex justify-between text-sm text-gray-500 mt-3">
-            <span>By By {highlightText(author)}</span>
-            <span>{readingTime} min read</span>
+            <span>By {highlightText(author)}</span>
+            <span>⏱️ {readingTime} min  read</span>
           </div>
+
+          {/* edit and delete Buttons */}
           <div className="flex gap-2 mt-3">
 
             <button
               onClick={(e) => {
-                e.preventDefault()
-                onEdit()
+                e.preventDefault();
+                onEdit();
               }}
-              className="bg-yellow-500 text-white px-3 py-1 rounded cursor-pointer"> Edit</button>
+              className="bg-yellow-500 text-white px-3 py-1 rounded cursor-pointer"
+            >
+              Edit
+            </button>
 
             <button
               onClick={(e) => {
-                e.preventDefault()
-                onDelete()
+                e.preventDefault();
+                onDelete();
               }}
-              className="bg-red-600 text-white px-3 py-1 rounded cursor-pointer "
+              className="bg-red-600 text-white px-3 py-1 rounded cursor-pointer"
             >
               Delete
             </button>
-
 
           </div>
         </div>
       </div>
     </Link>
-  )
-}
+  );
+};
 
-export default BlogCard
+export default BlogCard;

@@ -1,3 +1,4 @@
+
 import { useState, useEffect, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { updateBlog } from "../features/blog/blogSlice";
@@ -25,7 +26,7 @@ const EditPost = () => {
   const [readingTime, setReadingTime] = useState(5);
   const [image, setImage] = useState("");
 
-  // ✅ Load blog data
+
   useEffect(() => {
     if (blog) {
       setTitle(blog.title);
@@ -38,7 +39,7 @@ const EditPost = () => {
     }
   }, [blog]);
 
-  // ✅ Initialize Quill (ONLY ONCE)
+  //  Initialize Quill 
   useEffect(() => {
     if (!quillRef.current) {
       quillRef.current = new Quill(editorRef.current, {
@@ -61,14 +62,14 @@ const EditPost = () => {
     }
   }, []);
 
-  // ✅ Set existing content into editor
+  // Set existing content into editor
   useEffect(() => {
     if (quillRef.current && blog) {
       quillRef.current.root.innerHTML = blog.content || "";
     }
   }, [blog]);
 
-  // ✅ Submit
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -76,7 +77,7 @@ const EditPost = () => {
       id: blog.id,
       title,
       description,
-      content, // ✅ IMPORTANT FIX
+      content,
       author,
       category,
       readingTime,
@@ -118,7 +119,7 @@ const EditPost = () => {
           required
         />
 
-        {/* ✅ CONTENT EDITOR */}
+        {/* CONTENT */}
         <label className="font-semibold">Edit Content</label>
         <div
           ref={editorRef}

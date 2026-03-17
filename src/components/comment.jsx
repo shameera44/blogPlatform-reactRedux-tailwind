@@ -1,3 +1,4 @@
+
 import { useState } from "react"
 
 const Comment = () => {
@@ -9,7 +10,7 @@ const Comment = () => {
   const handleSubmit = () => {
     if (!name || !comment) return
 
-    const newComment = { name, comment,time: new Date().toLocaleString() }
+    const newComment = { name, comment, time: new Date().toLocaleString() }
 
     setComments([...comments, newComment])
 
@@ -49,9 +50,9 @@ const Comment = () => {
       <div className="mt-5">
 
 
-        { comments.length === 0 ? (
-    <p className="text-gray-500">No comments yet</p>
-  ) : ( comments.map((c, index) => (
+        {comments.length === 0 ? (
+          <p className="text-gray-500">No comments yet</p>
+        ) : (comments.map((c, index) => (
           <div key={index} className="border-b py-2">
             <p className="font-semibold">{c.name}</p>
             <p>{c.comment}</p>

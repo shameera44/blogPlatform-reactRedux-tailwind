@@ -3,13 +3,15 @@ import BlogCard from "../components/BlogCard"
 import { useSelector, useDispatch } from "react-redux"
 import { deleteBlog } from "../features/blog/blogSlice"
 import { useNavigate } from "react-router-dom"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import toast from "react-hot-toast"
+
 const Home = ({ searchTerm }) => {
 
   const blogs = useSelector(state => state.blog.posts)
   const dispatch = useDispatch()
   const navigate = useNavigate()
+
   const [selectedCategory, setSelectedCategory] = useState("all")
   const user = useSelector(state => state.auth.loggedinUser)
 
@@ -28,45 +30,81 @@ const Home = ({ searchTerm }) => {
     blog.author?.toLowerCase().includes(searchTerm?.toLowerCase() || "")
   )
 
+
+  // pagination settings
+
+  const [currentPage, setCurrentPage] = useState(1)
+
+  const firstPageCount = 3
+  const otherPageCount = 6
+
+  let currentBlogs = []
+
+  if (currentPage === 1) {
+    currentBlogs = searchFiltered.slice(0, firstPageCount)
+  } else {
+    const start = firstPageCount + (currentPage - 2) * otherPageCount
+    const end = start + otherPageCount
+    currentBlogs = searchFiltered.slice(start, end)
+  }
+
+  const totalPages =
+    1 + Math.ceil((searchFiltered.length - firstPageCount) / otherPageCount)
+
+  // Reset page when search or category changes
+  useEffect(() => {
+    setCurrentPage(1)
+  }, [searchTerm, selectedCategory])
+
+
   return (
-    <div className="min-h-screen flex flex-col lg:flex-row p-5">
+    <div className="min-h-screen flex flex-col lg:flex-row p-5 bg-gray-100">
 
       {/* sidebar added on the left */}
 
-      <div><Sidebar setSelectedCategory={setSelectedCategory} /></div>
+      <div>
+        <Sidebar setSelectedCategory={setSelectedCategory} />
+      </div>
 
 
       {/* Hero section */}
 
       <div className="flex-1 p-5 pt-10">
 
-        <div className="w-full h-80 lg:h-[500px] relative rounded-lg overflow-hidden">
-          <img
-            src="https://freerangestock.com/sample/178096/modern-workspace-with-laptop-coffee-and-plant-on-wooden-desk.jpg"
-            alt="Hero"
-            className="w-full h-full object-cover brightness-90"
-          />
-          <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white px-5">
-            <h1 className="text-3xl lg:text-5xl font-bold mb-3">
-              Welcome to BlogSphere
-            </h1>
-            <p className="text-lg lg:text-2xl">
-              Explore blogs with blogSphere.
-            </p>
+        {currentPage === 1 && (
+
+          <div className="w-full h-80 lg:h-[500px] relative rounded-lg overflow-hidden">
+            <img
+              src="https://freerangestock.com/sample/178096/modern-workspace-with-laptop-coffee-and-plant-on-wooden-desk.jpg"
+              alt="Hero"
+              className="w-full h-full object-cover brightness-90"
+            />
+            <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white px-5">
+              <h1 className="text-3xl lg:text-5xl font-bold mb-3">
+                Welcome to BlogSphere
+              </h1>
+              <p className="text-lg lg:text-2xl">
+                Explore blogs with blogSphere.
+              </p>
+            </div>
           </div>
-        </div>
+
+        )}
+
+        <h1 className="text-4xl font-bold mb-2 mt-3 bg-gray-500 text-white text-center ">Latest Blogs </h1>
 
 
         {/* blog card grid */}
 
-        <h1 className="text-4xl font-bold mb-2 mt-2 bg-gray-600 text-center text-white">Latest Blogs </h1>
+
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
 
 
-          {searchFiltered.length > 0 ? (
-            searchFiltered?.map(blog => (
+          {currentBlogs.length > 0 ? (
+            currentBlogs?.map(blog => (
               <div key={blog.id} className="relative">
                 <BlogCard {...blog}
+                  searchTerm={searchTerm}
                   onEdit={() => navigate(`/edit/${blog.id}`)}
                   onDelete={() => {
                     if (!user) {
@@ -82,7 +120,44 @@ const Home = ({ searchTerm }) => {
           )}
 
         </div>
+
+
+        {/* pagination Added */}
+
+        <div className="flex justify-center items-center gap-2 mt-10">
+
+          <button
+            onClick={() => setCurrentPage(prev => prev - 1)}
+            disabled={currentPage === 1}
+            className="px-3 py-1 bg-gray-300 rounded"
+          >
+            Prev
+          </button>
+
+          {Array.from({ length: totalPages }, (_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrentPage(index + 1)}
+              className={`px-3 py-1 rounded ${currentPage === index + 1
+                  ? "bg-blue-600 text-white"
+                  : "bg-gray-300"
+                }`}
+            >
+              {index + 1}
+            </button>
+          ))}
+
+          <button
+            onClick={() => setCurrentPage(prev => prev + 1)}
+            disabled={currentPage === totalPages}
+            className="px-3 py-1 bg-gray-300 rounded"
+          >
+            Next
+          </button>
+
+        </div>
       </div>
+
     </div>
   )
 }

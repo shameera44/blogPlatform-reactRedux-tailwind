@@ -12,11 +12,16 @@ import ProtectedRoute from "./components/ProtectedRoute"
 import { Toaster } from 'react-hot-toast';
 
 const App = () => {
+
   const [searchTerm, setSearchTerm] = useState("")
+
+
   return (
-    <div>
+    <div >
       <Toaster />
-      <Navbar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+      <Navbar
+        searchTerm={searchTerm}
+        setSearchTerm={setSearchTerm} />
 
       <Routes>
         <Route path="/" element={<Home searchTerm={searchTerm} />} />

@@ -2,7 +2,7 @@
 const Sidebar = ({ setSelectedCategory }) => {
 
   const categories = [
-     { name: "All", tag: "all" },
+    { name: "All", tag: "all" },
     { name: "Web Development", tag: "webdevelopment" },
     { name: "React", tag: "react" },
     { name: "JavaScript", tag: "javascript" },
@@ -11,16 +11,17 @@ const Sidebar = ({ setSelectedCategory }) => {
   ]
 
   return (
-    <div className="  w-42  p-5 pt-20  ">
+    <div className="  w-42  p-5 pt-20 bg-gray-100 ">
 
-      <h2 className="text-2xl font-extrabold mb-7 mt-5 text-orange-700">Categories</h2>
+      <h2 className="text-2xl font-extrabold mb-7 mt-5 text-orange-700 ">Categories</h2>
 
-      <ul className="flex flex-row lg:flex-col gap-7 text-xl text-blue-900 ">
+      <ul className="flex flex-row lg:flex-col gap-7 text-xl text-blue-900 
+      ">
 
         {categories.map((category) => (
           <li
             key={category.tag}
-             onClick={() => setSelectedCategory(category.tag)}
+            onClick={() => setSelectedCategory(category.tag)}
             className="cursor-pointer hover:text-orange-600 font-medium"
           >
             {category.name}
@@ -28,6 +29,7 @@ const Sidebar = ({ setSelectedCategory }) => {
         ))}
 
       </ul>
+
 
     </div>
   )

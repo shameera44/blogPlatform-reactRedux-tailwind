@@ -59,7 +59,7 @@ const Home = ({ searchTerm }) => {
 
 
   return (
-    <div className="min-h-screen flex flex-col lg:flex-row p-5 bg-gray-100">
+    <div className="min-h-screen flex flex-col lg:flex-row p-5 bg-gray-100 bg-white dark:bg-gray-900 text-black dark:text-white   ">
 
       {/* sidebar added on the left */}
 

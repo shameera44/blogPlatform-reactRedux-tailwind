@@ -38,7 +38,7 @@ const BlogCard = ({
 
   return (
     <Link to={`/postdetails/${id}`}>
-      <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition">
+      <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition  dark:bg-gray-900 text-black dark:text-white ">
 
         <img
           src={image}
@@ -56,12 +56,12 @@ const BlogCard = ({
             {highlightText(title)}
           </h2>
 
-          <p className="text-gray-600 text-sm mt-2">
+          <p className="text-black-600 text-sm mt-2">
             {highlightText(description)}
           </p>
 
           {/* Author , Reading Time  */}
-          <div className="flex justify-between text-sm text-gray-500 mt-3">
+          <div className="flex justify-between text-sm text-black mt-3">
             <span>By {highlightText(author)}</span>
             <span>⏱️ {readingTime} min  read</span>
           </div>

@@ -11,7 +11,7 @@ const Sidebar = ({ setSelectedCategory }) => {
   ]
 
   return (
-    <div className="  w-42  p-5 pt-20 bg-gray-100 ">
+    <div className="min-h-screen  w-42  p-5 pt-20 bg-gray-100  bg-white dark:bg-gray-800 text-black dark:text-white">
 
       <h2 className="text-2xl font-extrabold mb-7 mt-5 text-orange-700 ">Categories</h2>
 

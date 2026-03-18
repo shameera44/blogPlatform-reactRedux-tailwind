@@ -85,7 +85,7 @@ const PostDetails = () => {
           onClick={generateSummary}
           className="bg-green-600 text-white px-4 py-2 mt-5 rounded cursor-pointer hover:bg-green-700"
         >
-          Generate AI Summary
+          Generate  Summary
         </button>
       )}
 
@@ -93,7 +93,7 @@ const PostDetails = () => {
       {summary && (
         <div className="mt-6 p-4 bg-gray-100 rounded-lg">
           <h3 className="font-bold text-lg mb-2">
-            AI Summary
+             Summary
           </h3>
           <p className="text-gray-700">{summary}</p>
         </div>

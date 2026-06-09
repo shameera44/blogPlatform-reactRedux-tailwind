@@ -7,6 +7,7 @@ import ShareButtons from "../components/ShareButton"
 import BlogCard from "../components/BlogCard"
 import { calculateReadingTime } from "../utils/readingTime";
 
+
 const PostDetails = () => {
 
   const { id } = useParams()
@@ -15,6 +16,7 @@ const PostDetails = () => {
   const blog = blogs.find(post => post.id === Number(id))
 
   const [summary, setSummary] = useState("")
+const [loading, setLoading] = useState(false);
 
   if (!blog) {
     return <h1 className="text-center mt-20">Blog not found</h1>
@@ -52,7 +54,7 @@ const PostDetails = () => {
     window.speechSynthesis.cancel();
   };
   return (
-    <div className="max-w-4xl mx-auto p-5 mt-20">
+    <div className="max-w-4xl mx-auto p-5 mt-20 bg-white  dark:bg-gray-700 text-black dark:text-white  ">
 
       <img
         src={blog.image}
@@ -85,7 +87,7 @@ const PostDetails = () => {
           onClick={generateSummary}
           className="bg-green-600 text-white px-4 py-2 mt-5 rounded cursor-pointer hover:bg-green-700"
         >
-          Generate  Summary
+          AI Summary
         </button>
       )}
 

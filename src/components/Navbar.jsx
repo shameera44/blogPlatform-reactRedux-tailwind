@@ -73,7 +73,7 @@ const Navbar = ({ searchTerm, setSearchTerm }) => {
         {user ? (
           <button
             onClick={() => dispatch(logout())}
-            className="bg-red-600 px-4 py-1 rounded hover:bg-red-700"
+            className="bg-red-600 px-4 py-1 rounded-xl font-bold hover:bg-red-700"
           >
             Logout
           </button>
@@ -106,7 +106,7 @@ const Navbar = ({ searchTerm, setSearchTerm }) => {
             onClick={toggleDarkMode}
             className="px-3 py-1 bg-gray-200 dark:bg-gray-900 text-black dark:text-white rounded"
           >
-            {darkMode ? "☀ Light" : "🌙 Dark"}
+            {darkMode ? " Light" : " Dark"}
           </button>
 
           {user ? (

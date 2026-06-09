@@ -11,12 +11,11 @@ const Sidebar = ({ setSelectedCategory }) => {
   ]
 
   return (
-    <div className="min-h-screen  w-42  p-5 pt-20 bg-gray-100  bg-white dark:bg-gray-800 text-black dark:text-white">
+    <div className=" w-42  p-5 pt-20 bg-gray-100  bg-white dark:bg-gray-800 text-black dark:text-white">
 
       <h2 className="text-2xl font-extrabold mb-7 mt-5 text-orange-700 ">Categories</h2>
 
-      <ul className="flex flex-row lg:flex-col gap-7 text-xl text-blue-900 
-      ">
+      <ul className="flex flex-row lg:flex-col gap-7 text-xl text-blue-900 dark:text-white">
 
         {categories.map((category) => (
           <li
